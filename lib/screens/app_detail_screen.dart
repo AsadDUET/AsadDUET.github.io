@@ -174,10 +174,10 @@ class AppDetailScreen extends StatelessWidget {
 
             const SizedBox(height: 40),
 
-            // Other Apps by Asad
-            const Text(
-              'More Mobile Apps by Asad',
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
+            // Other Apps by IoTBangla
+            Text(
+              'More Mobile Apps by ${PortfolioData.profile.name}',
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
             ),
             const SizedBox(height: 16),
             Wrap(

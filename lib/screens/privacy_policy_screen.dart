@@ -103,7 +103,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
                                 Text(
                                   app != null
                                       ? 'Privacy Policy for ${app!.name}'
-                                      : 'Developer Privacy Policy (${profile.name})',
+                                      : 'Official Privacy Policy (${profile.name})',
                                   style: const TextStyle(
                                     fontSize: 24,
                                     fontWeight: FontWeight.w800,
@@ -111,7 +111,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 4),
                                 Text(
-                                  'Last Updated: ${policy?.lastUpdated ?? "October 2026"}  •  Developer: ${profile.name} (${profile.handle})',
+                                  'Last Updated: ${policy?.lastUpdated ?? "October 2026"}  •  Publisher: ${profile.name}',
                                   style: TextStyle(
                                     fontSize: 13,
                                     color: Theme.of(context)

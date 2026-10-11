@@ -1,11 +1,11 @@
 {
-    "name": "Asad | Flutter & Mobile App Developer Portfolio",
-    "short_name": "Asad Portfolio",
+    "name": "IoTBangla | Mobile Apps & Smart Solutions",
+    "short_name": "IoTBangla",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#090D16",
     "theme_color": "#6366F1",
-    "description": "Mobile Application Developer Portfolio showcasing Android & iOS apps built with Flutter by Asad (@AsadDUET).",
+    "description": "Official Mobile Application & Smart Solutions Portfolio by IoTBangla.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

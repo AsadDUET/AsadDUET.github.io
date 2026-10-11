@@ -44,7 +44,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(
-      find.textContaining('Developer Privacy Policy'),
+      find.textContaining('Official Privacy Policy'),
       findsOneWidget,
     );
 

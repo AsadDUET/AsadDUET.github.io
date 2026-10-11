@@ -149,7 +149,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     Text(
-                      'Flutter Dev • DUET',
+                      'Mobile Apps & IoT Studio',
                       style: TextStyle(
                         fontSize: 11,
                         fontWeight: FontWeight.w600,
@@ -181,11 +181,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         onTap: () => _scrollToSection(_appsKey),
                       ),
                       _NavBarButton(
-                        label: 'Skills',
+                        label: 'Capabilities',
                         onTap: () => _scrollToSection(_skillsKey),
                       ),
                       _NavBarButton(
-                        label: 'Experience',
+                        label: 'Solutions',
                         onTap: () => _scrollToSection(_timelineKey),
                       ),
                       _NavBarButton(
@@ -238,7 +238,7 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.all(20),
           children: [
             const Text(
-              'Navigation',
+              'IoTBangla',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
             ),
             const Divider(height: 28),
@@ -260,7 +260,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.code_rounded),
-              title: const Text('Skills & Tech Stack'),
+              title: const Text('Capabilities & Tech Stack'),
               onTap: () {
                 Navigator.pop(context);
                 _scrollToSection(_skillsKey);
@@ -268,7 +268,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ListTile(
               leading: const Icon(Icons.timeline_rounded),
-              title: const Text('Experience & DUET'),
+              title: const Text('What We Build'),
               onTap: () {
                 Navigator.pop(context);
                 _scrollToSection(_timelineKey);
@@ -368,7 +368,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(width: 7),
                     Flexible(
                       child: Text(
-                        'Available for Mobile Projects & Roles',
+                        'Official Mobile App Publisher & Studio',
                         style: TextStyle(
                           color: AppTheme.accentEmerald,
                           fontWeight: FontWeight.w700,
@@ -392,7 +392,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const Icon(
-                    Icons.school_rounded,
+                    Icons.memory_rounded,
                     color: AppTheme.primaryIndigo,
                     size: 14,
                   ),
@@ -415,7 +415,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         // Main Headline
         Text(
-          'Hi, I\'m ${profile.name} —\n${profile.roleTitle}',
+          '${profile.name} —\n${profile.roleTitle}',
           style: TextStyle(
             fontSize: isMobile ? 32 : 46,
             fontWeight: FontWeight.w900,
@@ -473,7 +473,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () => _scrollToSection(_appsKey),
               icon: const Icon(Icons.phone_android_rounded, size: 19),
               label: const Text(
-                'Explore My Mobile Apps',
+                'Explore Our Mobile Apps',
                 style: TextStyle(fontWeight: FontWeight.w700),
               ),
             ),
@@ -482,9 +482,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
               ),
-              onPressed: () => launchExternalLink(profile.githubUrl),
-              icon: const Icon(Icons.code_rounded, size: 19),
-              label: const Text('GitHub (@AsadDUET)'),
+              onPressed: () => launchExternalLink(profile.playStoreDevUrl),
+              icon: const Icon(Icons.shop_rounded, size: 19),
+              label: const Text('Google Play Store'),
             ),
             OutlinedButton.icon(
               style: OutlinedButton.styleFrom(
@@ -493,7 +493,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               onPressed: () => _scrollToSection(_contactKey),
               icon: const Icon(Icons.mail_outline_rounded, size: 19),
-              label: const Text('Get in Touch'),
+              label: const Text('Contact IoTBangla'),
             ),
           ],
         ),
@@ -894,7 +894,7 @@ class _HomeScreenState extends State<HomeScreen> {
               borderRadius: BorderRadius.circular(20),
             ),
             child: const Text(
-              'JOURNEY & EDUCATION',
+              'SOLUTIONS & FOCUS AREAS',
               style: TextStyle(
                 color: AppTheme.accentEmerald,
                 fontWeight: FontWeight.w800,
@@ -905,7 +905,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(height: 12),
           const Text(
-            'Experience & Engineering Background',
+            'What IoTBangla Builds & Delivers',
             style: TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.w900,
@@ -1079,7 +1079,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 14),
                 const Text(
-                  'Let\'s Build Your Next Mobile App',
+                  'Partner with IoTBangla',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 28,
@@ -1090,7 +1090,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ConstrainedBox(
                   constraints: const BoxConstraints(maxWidth: 620),
                   child: Text(
-                    'Looking for a Flutter developer to build, optimize, or publish your Android & iOS application? Reach out directly via email or GitHub.',
+                    'Need app support, custom Flutter mobile development, or smart IoT solutions? Reach out to the IoTBangla team.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 15,
@@ -1142,20 +1142,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           vertical: 15,
                         ),
                       ),
-                      onPressed: () => launchExternalLink(profile.githubUrl),
-                      icon: const Icon(Icons.code_rounded, size: 18),
-                      label: const Text('GitHub'),
-                    ),
-                    OutlinedButton.icon(
-                      style: OutlinedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 18,
-                          vertical: 15,
-                        ),
-                      ),
-                      onPressed: () => launchExternalLink(profile.linkedInUrl),
-                      icon: const Icon(Icons.business_center_rounded, size: 18),
-                      label: const Text('LinkedIn'),
+                      onPressed: () =>
+                          launchExternalLink(profile.playStoreDevUrl),
+                      icon: const Icon(Icons.shop_rounded, size: 18),
+                      label: const Text('Google Play'),
                     ),
                   ],
                 ),
@@ -1172,7 +1162,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               Text(
-                '© ${DateTime.now().year} ${profile.name} (${profile.handle}) • Built with Flutter Web',
+                '© ${DateTime.now().year} ${profile.name} • Mobile Apps & Smart Solutions',
                 style: TextStyle(
                   fontSize: 13,
                   color: Theme.of(context)
@@ -1188,7 +1178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onPressed: () =>
                         Navigator.of(context).pushNamed('/privacy'),
                     icon: const Icon(Icons.privacy_tip_outlined, size: 16),
-                    label: const Text('Developer Privacy Policy'),
+                    label: const Text('Official Privacy Policy'),
                   ),
                   TextButton.icon(
                     onPressed: () => launchExternalLink('/app-ads.txt'),

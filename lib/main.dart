@@ -92,7 +92,7 @@ class _AsadPortfolioAppState extends State<AsadPortfolioApp> {
       valueListenable: _themeController,
       builder: (context, themeMode, _) {
         return MaterialApp(
-          title: 'Asad | Flutter & Mobile App Developer',
+          title: 'IoTBangla | Mobile Apps & Smart Solutions',
           debugShowCheckedModeBanner: false,
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
