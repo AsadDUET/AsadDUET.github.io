@@ -190,19 +190,47 @@ class _PhoneMockupFrameState extends State<PhoneMockupFrame> {
     );
   }
 
+  String _normalizeAssetPath(String rawPath) {
+    final cleaned = rawPath.trim().replaceAll('\\', '/');
+    if (cleaned.startsWith('assets/')) {
+      return cleaned;
+    }
+    if (cleaned.startsWith('apps/')) {
+      return 'assets/$cleaned';
+    }
+    if (!cleaned.contains('/')) {
+      return 'assets/apps/$cleaned';
+    }
+    return 'assets/$cleaned';
+  }
+
   Widget _buildScreenContent(AppScreenPreview screen) {
     final imagePath = screen.imageUrlOrAsset;
-    if (imagePath != null && imagePath.isNotEmpty) {
-      final isNetwork = imagePath.startsWith('http');
-      return Container(
-        key: ValueKey(imagePath),
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(16),
-          child: isNetwork
-              ? Image.network(imagePath, fit: BoxFit.cover)
-              : Image.asset(imagePath, fit: BoxFit.cover),
+    if (imagePath != null && imagePath.trim().isNotEmpty) {
+      final isNetwork = imagePath.trim().startsWith('http');
+      final resolvedAssetPath =
+          isNetwork ? imagePath.trim() : _normalizeAssetPath(imagePath);
+
+      return SizedBox.expand(
+        key: ValueKey(resolvedAssetPath),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(18),
+            child: isNetwork
+                ? Image.network(
+                    resolvedAssetPath,
+                    fit: BoxFit.cover,
+                    width: double.infinity,
+                    height: double.infinity,
+                  )
+                : Image.asset(
+                    resolvedAssetPath,
+                    fit: BoxFit.cover,
+                    width: double.infinity,
+                    height: double.infinity,
+                  ),
+          ),
         ),
       );
     }

@@ -13,7 +13,7 @@ class DeveloperProfile {
   final bool availableForWork;
   final String email;
   final String githubUrl;
-  final String linkedInUrl;
+  final String? linkedInUrl;
   final String playStoreDevUrl;
   final String appStoreDevUrl;
   final String resumeUrl;
@@ -31,7 +31,7 @@ class DeveloperProfile {
     this.availableForWork = true,
     required this.email,
     required this.githubUrl,
-    required this.linkedInUrl,
+    this.linkedInUrl,
     required this.playStoreDevUrl,
     this.appStoreDevUrl = '',
     this.resumeUrl = '',

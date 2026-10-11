@@ -30,14 +30,15 @@ class PortfolioData {
     location: 'Dhaka, Bangladesh',
     educationBadge: 'Flutter • Android • iOS • IoT',
     availableForWork: true,
-    email: 'support@iotbangla.com', // Update with your official IoTBangla support email
+    email: 'asadouzzaman@gmail.com', // Update with your official IoTBangla support email
     githubUrl: 'https://github.com/AsadDUET',
-    linkedInUrl: 'https://linkedin.com',
-    playStoreDevUrl: 'https://play.google.com/store/apps',
+    // linkedInUrl: 'https://linkedin.com',
+    playStoreDevUrl:
+        'https://play.google.com/store/apps/dev?id=4838835529355725479',
     appStoreDevUrl: '',
     stats: [
       StatMetric(
-        value: '6+',
+        value: '3+',
         label: 'Mobile Apps Published',
         icon: Icons.phone_android_rounded,
       ),
@@ -83,8 +84,8 @@ class PortfolioData {
       rating: 4.9,
       isFeatured: true,
       isOpenSource: false,
-      playStoreUrl: 'https://play.google.com/store/apps',
-      appStoreUrl: 'https://apps.apple.com',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.iotbangla.mess_manager&pcampaignid=web_share',
+      // appStoreUrl: 'https://apps.apple.com',
       apkDownloadUrl: '',
       keyFeatures: [
         'Class-wise (Class 6 to 9–10) & Topic-wise structured geometry curriculum (Lines, Angles, Triangles, Quadrilaterals, Circles)',
@@ -151,7 +152,7 @@ class PortfolioData {
           'Google Play Services',
         ],
         dataRetentionAndDeletion: 'All local learning progress, XP history, and streaks can be permanently wiped at any time directly inside the app via the Profile Stats sheet → Reset Progress button, or by uninstalling the app.',
-        supportEmail: 'support@iotbangla.com',
+        supportEmail: 'asadouzzaman@gmail.com',
       ),
     ),
     MobileAppProject(
@@ -176,7 +177,7 @@ class PortfolioData {
       isFeatured: true,
       isOpenSource: false,
       playStoreUrl: 'https://play.google.com/store/apps',
-      appStoreUrl: 'https://apps.apple.com',
+      // appStoreUrl: 'https://apps.apple.com',
       apkDownloadUrl: '',
       keyFeatures: [
         'Real-time mess ledger with automated meal rate, grocery expenses & member deposit tracking',
@@ -196,7 +197,7 @@ class PortfolioData {
       ],
       screenPreviews: [
         AppScreenPreview(
-          imageUrlOrAsset: 'apps/bachelor1.jpg',
+          imageUrlOrAsset: 'assets/apps/bachelor1.jpg',
           title: 'Mess Dashboard & Ledger',
           subtitle: 'Mess Balance: ৳4,250 • Meal Rate: ৳62.50',
           icon: Icons.restaurant_menu_rounded,
@@ -207,7 +208,7 @@ class PortfolioData {
           ],
         ),
         AppScreenPreview(
-          imageUrlOrAsset: 'apps/bachelor2.jpg',
+          imageUrlOrAsset: 'assets/apps/bachelor2.jpg',
           title: 'To-Let & Rental Finder',
           subtitle: 'Browse Seats, Single Rooms & Sublets on Map',
           icon: Icons.holiday_village_rounded,
@@ -247,7 +248,7 @@ class PortfolioData {
           'OpenStreetMap / Flutter Map (Interactive rental map view)',
         ],
         dataRetentionAndDeletion: 'Users can permanently delete their account and associated personal data anytime directly inside the app via Profile → Delete Account, or by contacting support.',
-        supportEmail: 'support@iotbangla.com',
+        supportEmail: 'asadouzzaman@gmail.com',
       ),
     ),
     MobileAppProject(
@@ -269,8 +270,8 @@ class PortfolioData {
       rating: 4.8,
       isFeatured: true,
       isOpenSource: false,
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.asadduet.prepaid_meter',
-      appStoreUrl: 'https://apps.apple.com',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.asadduet.prepaid_meter&pcampaignid=web_share',
+      // appStoreUrl: 'https://apps.apple.com',
       apkDownloadUrl: '',
       keyFeatures: [
         'One-tap access to DESCO & NESCO prepaid portals with saved Account/Meter IDs',
@@ -340,7 +341,7 @@ class PortfolioData {
           'Official DESCO & NESCO Customer Web Portals',
         ],
         dataRetentionAndDeletion: 'All saved meter IDs and daily balance records are stored locally on your device and can be edited or deleted anytime from within the app, or wiped completely by clearing app storage / uninstalling the app.',
-        supportEmail: 'support@iotbangla.com',
+        supportEmail: 'asadouzzaman@gmail.com',
       ),
     ),
     // MobileAppProject(
@@ -430,7 +431,7 @@ class PortfolioData {
     //       'Firebase Crashlytics (Stability monitoring)',
     //     ],
     //     dataRetentionAndDeletion: 'Users can unpair devices or delete their account and all associated cloud telemetry data directly from Settings → Account → Delete Data.',
-    //     supportEmail: 'support@iotbangla.com',
+    //     supportEmail: 'asadouzzaman@gmail.com',
     //   ),
     // ),
     // MobileAppProject(
@@ -508,7 +509,7 @@ class PortfolioData {
     //       'Google AdMob (Advertising)',
     //     ],
     //     dataRetentionAndDeletion: 'Deleting a document inside the app or uninstalling the app permanently deletes the files from local app storage.',
-    //     supportEmail: 'support@iotbangla.com',
+    //     supportEmail: 'asadouzzaman@gmail.com',
     //   ),
     // ),
     // MobileAppProject(
@@ -581,7 +582,7 @@ class PortfolioData {
     //       'No third-party advertising or personal tracking SDKs are included.',
     //     ],
     //     dataRetentionAndDeletion: 'All data stays on your device and is removed immediately upon uninstalling the app.',
-    //     supportEmail: 'support@iotbangla.com',
+    //     supportEmail: 'asadouzzaman@gmail.com',
     //   ),
     // ),
   ];
